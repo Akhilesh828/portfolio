@@ -1,0 +1,78 @@
+[{
+        "company": "Tata Consultancy Services",
+        "role": "Snowflake Developer | US Healthcare Domain",
+        "tech": ["Snowflake", "AWS", "S3", "DMS", "SQL", "Redshift"],
+        "duration": "Dec 2023 – Jan 2025",
+        "side": "left",
+        "points": [{
+                "title": "🚀 Data Migration",
+                "desc": "Migrated 500+ Oracle tables to Snowflake using AWS DMS and S3 with high data accuracy."
+            },
+            {
+                "title": "📊 Data Validation",
+                "desc": "Implemented validation framework using Redshift Spectrum to ensure data consistency."
+            },
+            {
+                "title": "🌐 Data Challenges",
+                "desc": "Resolved encoding issues involving Japanese, UTF-8, and special characters."
+            },
+            {
+                "title": "⚡ Performance Optimization",
+                "desc": "Optimized queries, file formats, and warehouse configurations."
+            },
+            {
+                "title": "🔄 Real-time Ingestion",
+                "desc": "Built real-time pipelines using Snowpipe."
+            }
+        ]
+    },
+
+    {
+        "company": "Tata Consultancy Services",
+        "role": "Data Engineer | US Retail & Healthcare Domain",
+        "tech": ["Snowflake", "Azure", "ADF", "Databricks", "SQL"],
+        "duration": "Feb 2025 – Present",
+        "side": "right",
+        "points": [{
+                "title": "🚀 Scalable Data Pipeline Development",
+                "desc": "Engineered and maintained 25+ enterprise-grade ETL pipelines using Azure Data Factory and Databricks for seamless data ingestion and transformation between Azure Data Lake and Snowflake."
+            },
+            {
+                "title": "🏗️ Modern Data Architecture (Medallion Framework)",
+                "desc": "Designed and implemented a robust Bronze–Silver–Gold data architecture in Snowflake to enable structured data processing, improved data reliability, and business-ready analytics layers."
+            },
+            {
+                "title": "📊 Advanced Data Transformation & Quality Engineering",
+                "desc": "Developed complex transformation logic including deduplication (ROW_NUMBER), type standardization, lifecycle filtering, and validation frameworks to ensure high data accuracy and consistency."
+            },
+            {
+                "title": "⚡ Real-Time Data Ingestion & Incremental Processing",
+                "desc": "Built event-driven ingestion pipelines using Snowpipe and implemented Streams & Tasks for automated incremental data processing, reducing manual intervention and improving data freshness."
+            },
+            {
+                "title": "🎯 Campaign & Customer Data Engineering",
+                "desc": "Delivered data solutions for campaign execution and customer analytics by enabling reliable audience processing, campaign workflows, and performance measurement pipelines."
+            },
+            {
+                "title": "🛠️ Production Stability & Reliability Engineering",
+                "desc": "Strengthened production systems by monitoring pipelines, troubleshooting failures, implementing retry strategies, and introducing validation checkpoints to ensure uninterrupted data operations."
+            },
+            {
+                "title": "📈 Business-Centric Data Modeling",
+                "desc": "Designed Gold-layer fact and dimension models to support analytical use cases such as campaign performance tracking, revenue analysis, and customer behavior insights."
+            },
+            {
+                "title": "🔄 Legacy Modernization & Cloud Migration",
+                "desc": "Contributed to migration of legacy data systems to Snowflake by stabilizing existing workflows, redesigning ingestion patterns, and enabling scalable cloud-native architecture."
+            },
+            {
+                "title": "🧠 Workflow Automation & Control Mechanisms",
+                "desc": "Developed stored procedures for automated workflows including approval systems, idempotent processing, and controlled data promotion across layers."
+            },
+            {
+                "title": "🤝 Cross-Functional Collaboration & Knowledge Enablement",
+                "desc": "Facilitated reverse knowledge transfer, created SOPs, and collaborated with technical and non-technical teams to ensure smooth transitions and operational efficiency."
+            }
+        ]
+    }
+]

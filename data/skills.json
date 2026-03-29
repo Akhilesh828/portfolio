@@ -1,0 +1,22 @@
+[
+  {
+    "title": "☁️ Cloud Platforms",
+    "tags": ["AWS (S3, DMS)", "Azure (ADF, ADLS)"]
+  },
+  {
+    "title": "❄️ Data Warehousing",
+    "tags": ["Snowflake"]
+  },
+  {
+    "title": "⚙️ Data Engineering",
+    "tags": ["Azure Data Factory", "Databricks", "Snowpipe", "AWS DMS"]
+  },
+  {
+    "title": "💻 Programming",
+    "tags": ["SQL", "Python", "JavaScript", "Java"]
+  },
+  {
+    "title": "🧠 Data Concepts",
+    "tags": ["Data Modeling", "ETL Pipelines", "CDC", "Data Validation"]
+  }
+]

@@ -1,0 +1,259 @@
+[{
+        "id": "oracle-snowflake",
+
+        "title": "Oracle → Snowflake Data Migration Pipeline",
+
+        "desc": "Designed and implemented an enterprise-scale data migration pipeline to move legacy Oracle data into Snowflake using AWS services. Ensured high data integrity, scalability, and performance across large datasets.",
+
+        "highlights": [
+            "Migrated 500+ tables with 99.9% data accuracy",
+            "Handled multi-language encoding (UTF-8, Japanese, special characters)",
+            "Built validation layer using Redshift Spectrum",
+            "Optimized Snowflake loading performance and file formats"
+        ],
+
+        "impact": {
+            "scale": "500+ tables",
+            "accuracy": "99.9%",
+            "volume": "Millions of records",
+            "performance": "Optimized load time and query efficiency"
+        },
+
+        "architecture": {
+            "flow": [
+                "Oracle",
+                "AWS DMS",
+                "Amazon S3",
+                "Snowflake",
+                "Redshift Spectrum"
+            ],
+            "description": "Data extracted from Oracle using AWS DMS, staged in S3, loaded into Snowflake using COPY INTO, and validated using Redshift Spectrum."
+        },
+
+        "tech": ["AWS DMS", "S3", "Snowflake", "Redshift"],
+
+        "features": [
+            "Automated bulk data loading using COPY INTO",
+            "Schema mapping and transformation handling",
+            "Data validation framework across systems",
+            "Error handling for encoding and delimiter issues"
+        ],
+
+        "challenges": [
+            "Handling mixed character encoding (Japanese, Chinese, special symbols)",
+            "Maintaining consistency across environments (Dev, Stage, Prod)",
+            "Managing large-scale data validation efficiently"
+        ],
+
+        "solutions": [
+            "Created multiple file formats for different encodings",
+            "Implemented validation joins",
+            "Standardized deployment process across environments"
+        ],
+
+        "image": "Oracle_to_snowflake",
+        "category": ["snowflake", "aws", "etl"]
+    },
+
+
+
+    {
+        "id": "azure-data-pipeline",
+
+        "title": "Azure Data Engineering Pipeline",
+
+        "desc": "Designed scalable ETL pipelines using Azure Data Factory and Databricks to process and transform large datasets.",
+
+        "highlights": [
+            "Built scalable ETL pipelines using Azure services",
+            "Optimized data transformation workflows using Databricks",
+            "Handled large-scale datasets efficiently",
+            "Improved pipeline performance and reliability"
+        ],
+
+        "impact": {
+            "scale": "Large-scale data",
+            "accuracy": "High reliability",
+            "volume": "Enterprise datasets",
+            "performance": "Optimized transformations"
+        },
+
+        "architecture": {
+            "flow": [
+                "ADLS",
+                "ADF",
+                "Databricks (PySpark)",
+                "Snowflake"
+            ],
+            "description": "Data ingested from ADLS, processed using Azure Data Factory and Databricks, and loaded into Snowflake for analytics."
+        },
+
+        "tech": [
+            "Azure Data Factory",
+            "Databricks",
+            "ADLS",
+            "Snowflake",
+            "PySpark"
+        ],
+
+        "features": [
+            "End-to-end ETL pipeline orchestration",
+            "Data transformation using PySpark",
+            "Integration with Snowflake for analytics",
+            "Scalable and modular pipeline design"
+        ],
+
+        "challenges": [
+            "Handling large data volumes efficiently",
+            "Optimizing transformation performance",
+            "Ensuring pipeline reliability and monitoring"
+        ],
+
+        "solutions": [
+            "Used Databricks for distributed processing",
+            "Optimized ADF pipelines for performance",
+            "Implemented monitoring and error handling mechanisms"
+        ],
+
+        "image": "Azure_Data_Engineering_Tools",
+        "category": ["azure", "etl"]
+    },
+
+    {
+        "id": "health-wellness-data-integration",
+
+        "title": "Health & Wellness Data Integration",
+
+        "desc": "Built an end-to-end healthcare data integration platform using Snowflake and Azure to process clinical, pharmacy, and claims data with scalable, real-time pipelines.",
+
+        "highlights": [
+            "Designed Medallion architecture (Bronze, Silver, Gold) for healthcare data processing",
+            "Integrated multiple healthcare domains including clinical, pharmacy, and claims",
+            "Enabled real-time data ingestion using event-driven Snowpipe pipelines",
+            "Built analytics-ready data models for reporting and business insights"
+        ],
+
+        "impact": {
+            "scale": "Multi-domain healthcare data platform",
+            "accuracy": "Improved data consistency and patient-level unification",
+            "volume": "Processed large-scale structured healthcare datasets",
+            "performance": "Enabled near real-time ingestion and automated pipeline execution"
+        },
+
+        "architecture": {
+            "flow": [
+                "Source Systems",
+                "Azure Data Lake (ADLS Gen2)",
+                "Event Grid + Queue",
+                "Snowpipe (Auto Ingest)",
+                "Snowflake (Bronze → Silver → Gold)",
+                "Analytics & Reporting Layer"
+            ],
+            "description": "Healthcare data is ingested into Azure Data Lake, processed through event-driven pipelines using Snowpipe, transformed across Bronze, Silver, and Gold layers in Snowflake, and exposed for analytics and reporting."
+        },
+
+        "tech": [
+            "Snowflake",
+            "Azure Data Lake",
+            "Azure Event Grid",
+            "Azure Queue Storage",
+            "SQL"
+        ],
+
+        "features": [
+            "End-to-end healthcare data ingestion and processing pipeline",
+            "Medallion architecture for structured data transformation",
+            "Real-time ingestion using Snowpipe with event-driven architecture",
+            "Incremental processing using Streams and Tasks",
+            "Audit and monitoring framework for data tracking",
+            "Schema-on-read ingestion for flexible data loading"
+        ],
+
+        "challenges": [
+            "Integrating heterogeneous healthcare datasets from multiple domains",
+            "Handling continuous data arrival with scalable ingestion mechanisms",
+            "Maintaining data consistency and historical tracking across patient records",
+            "Ensuring pipeline observability and error tracking"
+        ],
+
+        "solutions": [
+            "Implemented Medallion architecture to separate raw, clean, and business layers",
+            "Enabled Snowpipe with event-based triggers for automated ingestion",
+            "Designed incremental pipelines using Streams and Tasks for efficiency",
+            "Built audit tables and monitoring logic for end-to-end data visibility"
+        ],
+
+        "image": "snowpipe",
+        "category": ["azure", "snowflake"]
+    },
+
+    {
+        "id": "campaign-data-integration-platform",
+
+        "title": "Campaign Data Integration & Processing Platform",
+
+        "desc": "Designed and supported a scalable data platform for campaign execution, audience processing, and performance analytics using Snowflake and Azure-based pipelines.",
+
+        "highlights": [
+            "Built end-to-end data pipelines for campaign lifecycle management",
+            "Enabled audience processing and campaign execution workflows",
+            "Developed data models for campaign performance and ROI analysis",
+            "Automated data ingestion and transformation for large-scale datasets"
+        ],
+
+        "impact": {
+            "scale": "Enterprise retail campaign ecosystem",
+            "accuracy": "Improved data consistency across campaign workflows",
+            "volume": "Handled high-volume audience and campaign datasets",
+            "performance": "Reduced manual effort through automation and reliable pipelines"
+        },
+
+        "architecture": {
+            "flow": [
+                "Source Systems",
+                "Azure Data Lake",
+                "ADF Pipelines",
+                "Databricks Processing",
+                "Snowflake (Bronze → Silver → Gold)",
+                "Campaign Execution & Analytics Systems"
+            ],
+            "description": "Data is ingested from multiple source systems into Azure Data Lake, processed through ADF and Databricks, transformed in Snowflake using a Medallion architecture, and consumed by downstream campaign execution and analytics systems."
+        },
+
+        "tech": [
+            "Azure",
+            "Azure Data Factory",
+            "Azure Data Lake",
+            "Snowflake",
+            "SQL",
+            "Databricks"
+        ],
+
+        "features": [
+            "End-to-end campaign data pipeline orchestration",
+            "Audience data processing and transformation workflows",
+            "Medallion architecture implementation in Snowflake",
+            "Automated data ingestion using Snowpipe",
+            "Incremental processing using Streams and Tasks",
+            "Stored procedure-based workflow automation"
+        ],
+
+        "challenges": [
+            "Handling complex campaign lifecycle and audience processing logic",
+            "Ensuring data consistency across multiple interconnected systems",
+            "Managing high-volume datasets with strict performance requirements",
+            "Maintaining pipeline stability in production environments"
+        ],
+
+        "solutions": [
+            "Designed structured Medallion architecture for clear data layer separation",
+            "Implemented validation and deduplication logic to improve data quality",
+            "Enabled event-driven ingestion and incremental processing for scalability",
+            "Introduced monitoring, retry mechanisms, and failure handling strategies"
+        ],
+
+        "image": "campaign",
+        "category": ["azure", "snowflake"]
+    }
+
+]
