@@ -101,7 +101,7 @@ document.querySelectorAll("a").forEach(link => {
   async function fetchData(type = "skills") {
     const path = type === "skills"
       ? "skills.json"
-      : "./projects/projects.json";
+      : "./data/projects.json";
 
     const response = await fetch(path);
     return await response.json();
@@ -532,3 +532,71 @@ form.addEventListener("submit", function(e) {
       alert("Failed ❌");
     });
 });
+
+
+  /* ================= Skills ================= */
+fetch("./data/skills.json")
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("skills-container");
+
+    data.forEach(skill => {
+      const card = document.createElement("div");
+      card.classList.add("stack-card");
+
+      card.innerHTML = `
+        <h3>${skill.title}</h3>
+        <div class="tags">
+          ${skill.tags.map(tag => `<span>${tag}</span>`).join("")}
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+  })
+  .catch(error => console.error("Error loading skills:", error));
+
+
+  fetch("./data/experiences.json")
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById("experience-container");
+
+    data.forEach(exp => {
+      const sideClass = exp.side === "right" ? "right" : "left";
+
+      const expHTML = `
+        <div class="container ${sideClass}">
+          <div class="content">
+
+            <div class="tag">
+              <h2>${exp.company}</h2>
+            </div>
+
+            <div class="desc">
+              <h3>${exp.role}</h3>
+
+              <p class="tech-stack">
+                ${exp.tech.join(" • ")}
+              </p>
+
+              <p>${exp.duration}</p>
+
+              <div class="exp-content">
+                ${exp.points.map(point => `
+                  <div class="exp-block">
+                    <h4>${point.title}</h4>
+                    <p>${point.desc}</p>
+                  </div>
+                `).join("")}
+              </div>
+
+            </div>
+          </div>
+        </div>
+      `;
+
+      container.innerHTML += expHTML;
+    });
+  })
+  .catch(err => console.error("Error loading experience:", err));
