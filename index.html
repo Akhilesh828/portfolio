@@ -174,8 +174,8 @@
 
         <!-- 🔥 CTA -->
         <div class="resumebtn">
-          <a href="https://github.com/Akhilesh828/Resume/blob/3b2166ce9aa7b8ac1d27fff9e7fdee5c151d4dd8/resume_mar_26.png?raw=true" target="_blank"
-            class="btn"> <span>Resume</span> <i class="fas fa-chevron-right"></i> </a>
+          <a href="https://github.com/Akhilesh828/Resume/blob/3b2166ce9aa7b8ac1d27fff9e7fdee5c151d4dd8/resume_mar_26.png?raw=true"
+            target="_blank" class="btn"> <span>Resume</span> <i class="fas fa-chevron-right"></i> </a>
         </div>
 
       </div>
@@ -187,51 +187,8 @@
   <section class="skills" id="skills">
     <h2 class="heading">Tech <span>Stack</span></h2>
 
-    <div class="tech-stack">
-
-      <div class="stack-card">
-        <h3>☁️ Cloud Platforms</h3>
-        <div class="tags">
-          <span>AWS (S3, DMS)</span>
-          <span>Azure (ADF, ADLS)</span>
-        </div>
-      </div>
-
-      <div class="stack-card">
-        <h3>❄️ Data Warehousing</h3>
-        <div class="tags">
-          <span>Snowflake</span>
-        </div>
-      </div>
-
-      <div class="stack-card">
-        <h3>⚙️ Data Engineering</h3>
-        <div class="tags">
-          <span>Azure Data Factory</span>
-          <span>Databricks</span>
-          <span>Snowpipe</span>
-          <span>AWS DMS</span>
-        </div>
-      </div>
-
-      <div class="stack-card">
-        <h3>💻 Programming</h3>
-        <div class="tags">
-          <span>SQL</span>
-          <span>Python</span>
-        </div>
-      </div>
-
-      <div class="stack-card">
-        <h3>🧠 Data Concepts</h3>
-        <div class="tags">
-          <span>Data Modeling</span>
-          <span>ETL Pipelines</span>
-          <span>CDC</span>
-          <span>Data Validation</span>
-        </div>
-      </div>
-
+    <div class="tech-stack" id="skills-container">
+      <!-- Cards will be injected here -->
     </div>
   </section>
   <!-- skills section ends -->
@@ -310,132 +267,27 @@
 
 
   <!-- experience section starts -->
-  <section class="experience" id="experience">
+<section class="experience" id="experience">
 
-    <h2 class="heading"><i class="fas fa-briefcase"></i> Professional Experience</h2>
+  <h2 class="heading">
+    <i class="fas fa-briefcase"></i> Professional Experience
+  </h2>
 
-    <div class="timeline">
+  <div class="timeline" id="experience-container">
+    <!-- Dynamic content -->
+  </div>
 
+  <div class="morebtn">
+    <a href="https://www.linkedin.com/in/akhilesh-prajapati-2002/" class="btn" target="_blank">
+      <span>View Full Profile</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
 
-      <!-- ================= FIRST ROLE ================= -->
-      <div class="container left">
-
-        <div class="content">
-          <div class="tag">
-            <h2>Tata Consultancy Services</h2>
-          </div>
-
-          <div class="desc">
-            <h3>Snowflake Developer | US Healthcare Domain</h3>
-
-            <p class="tech-stack">
-              Snowflake • AWS • S3 • DMS • SQL • Redshift
-            </p>
-
-            <p>Dec 2023 – Jan 2025</p>
-
-            <div class="exp-content">
-
-              <div class="exp-block">
-                <h4>🚀 Data Migration</h4>
-                <p>Migrated <b>500+ Oracle tables</b> to Snowflake using <b>AWS DMS</b> and <b>S3</b> with high data
-                  accuracy.</p>
-              </div>
-
-              <div class="exp-block">
-                <h4>📊 Data Validation</h4>
-                <p>Implemented validation framework using <b>Redshift Spectrum</b> to ensure data consistency across
-                  systems.</p>
-              </div>
-
-              <div class="exp-block">
-                <h4>🌐 Data Challenges</h4>
-                <p>Resolved complex encoding issues involving <b>Japanese, UTF-8, and special characters</b> during
-                  migration.</p>
-              </div>
-
-              <div class="exp-block">
-                <h4>⚡ Performance Optimization</h4>
-                <p>Optimized Snowflake queries, file formats, and warehouse configurations to improve performance.</p>
-              </div>
-
-              <div class="exp-block">
-                <h4>🔄 Real-time Ingestion</h4>
-                <p>Built real-time ingestion pipelines using <b>Snowpipe</b> for continuous data loading.</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- ================= SECOND ROLE ================= -->
-      <div class="container right">
-        <div class="content">
-          <div class="tag">
-            <h2>Tata Consultancy Services</h2>
-          </div>
-
-          <div class="desc">
-            <h3>Data Engineer | US Retail Domain</h3>
-
-            <p class="tech-stack">
-              Snowflake • Azure • ADF • Databricks • SQL
-            </p>
-
-            <p>Feb 2025 – Present</p>
-
-            <div class="exp-content">
-
-              <div class="exp-block">
-                <h4>🚀 Data Pipelines</h4>
-                <p>Designed and maintained scalable ETL pipelines using <b>Azure Data Factory</b> and <b>Databricks</b>
-                  for campaign analytics.</p>
-              </div>
-
-              <div class="exp-block">
-                <h4>📊 Data Processing</h4>
-                <p>Processed and validated large-scale datasets loaded into <b>Snowflake</b> from Azure environments.
-                </p>
-              </div>
-
-              <div class="exp-block">
-                <h4>🎯 Campaign Platforms</h4>
-                <p>Worked on enterprise platforms <b>CAAP, Prism, and Bullseye</b> for audience targeting and marketing
-                  analytics.</p>
-              </div>
-
-              <div class="exp-block">
-                <h4>🛠️ Production Support</h4>
-                <p>Monitored pipelines, resolved failures, and ensured high availability of data systems.</p>
-              </div>
-
-              <div class="exp-block">
-                <h4>🤝 Collaboration</h4>
-                <p>Created SOPs, documentation, and supported knowledge transfer across teams.</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="morebtn">
-      <a href="https://www.linkedin.com/in/akhilesh-prajapati-2002/" class="btn" target="_blank">
-        <span>View Full Profile</span>
-        <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
-
-  </section>
+</section>
   <!-- experience section ends -->
 
-
-
-
+  
 
   <!-- contact section starts -->
   <section class="contact" id="contact">
