@@ -1,22 +1,51 @@
 [
   {
     "title": "☁️ Cloud Platforms",
-    "tags": ["AWS (S3, DMS)", "Azure (ADF, ADLS)"]
+    "tags": [
+      "Azure",
+      "AWS"
+
+    ]
   },
   {
-    "title": "❄️ Data Warehousing",
-    "tags": ["Snowflake"]
+    "title": "❄️ Snowflake & Data Warehousing",
+    "tags": [
+      "Snowflake",
+      "Snowpipe",
+      "Streams & Tasks",
+      "RBAC",
+      "Data Warehousing",
+      "Dimensional Modeling"
+    ]
   },
   {
     "title": "⚙️ Data Engineering",
-    "tags": ["Azure Data Factory", "Databricks", "Snowpipe", "AWS DMS"]
+    "tags": [
+      "ETL/ELT Pipelines",
+      "CDC Pipelines",
+      "Databricks",
+      "Metadata-Driven Pipelines",
+      "Data Validation",
+      "Pipeline Orchestration"
+    ]
   },
   {
-    "title": "💻 Programming",
-    "tags": ["SQL", "Python", "JavaScript", "Java"]
+    "title": "💻 Programming & Querying",
+    "tags": [
+      "SQL",
+      "Python",
+      "JavaScript",
+      "Java"
+    ]
   },
   {
-    "title": "🧠 Data Concepts",
-    "tags": ["Data Modeling", "ETL Pipelines", "CDC", "Data Validation"]
+    "title": "📊 Analytics & Enterprise Systems",
+    "tags": [
+      "Campaign Analytics",
+      "KPI Reporting",
+      "Production Support",
+      "Data Migration",
+      "Business Reporting"
+    ]
   }
 ]
